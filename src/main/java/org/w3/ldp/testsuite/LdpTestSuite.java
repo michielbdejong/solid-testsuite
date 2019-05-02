@@ -165,7 +165,8 @@ public class LdpTestSuite {
 				throw new IllegalArgumentException("ERROR: invalid server uri, " + e.getLocalizedMessage());
 			}
 		} else {
-			throw new IllegalArgumentException("ERROR: missing server uri");
+                        server = "http://localhost:8080";
+			// throw new IllegalArgumentException("ERROR: missing server uri");
 		}
 
 		// Listener injection from options
